@@ -1,13 +1,14 @@
 import React from 'react';
 import Dashboard from './Dashboard';
 import Navi from '../navigation/Navi';
+import { Container } from 'reactstrap';
 
 function App() {
   return (
-    <div className='App'>
+    <Container className='App'>
       <Navi />
       <Dashboard />
-    </div>
+    </Container>
   );
 }
 
