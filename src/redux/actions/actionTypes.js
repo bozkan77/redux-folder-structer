@@ -1,3 +1,7 @@
 export const GHANGE_CATEGORY = 'GHANGE_CATEGORY';
 export const GET_CATEGORY_SUCCESS = 'GET_CATEGORY_SUCCESS';
+// product
 export const GET_PRODUCT_SUCCESS = 'GET_PRODUCT_SUCCESS';
+//cart
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_TO_CART = 'REMOVE_TO_CART';

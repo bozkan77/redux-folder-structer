@@ -3,4 +3,5 @@ export default {
   categoryName: 'All',
   categories: [],
   products: [],
+  cart: [],
 };
