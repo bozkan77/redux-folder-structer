@@ -5,3 +5,6 @@ export const GET_PRODUCT_SUCCESS = 'GET_PRODUCT_SUCCESS';
 //cart
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const REMOVE_TO_CART = 'REMOVE_TO_CART';
+// create and update
+export const CREATE_PRODUCT_SUCCESS = 'CREATE_PRODUCT_SUCCESS';
+export const UPDATE_PRODUCT_SUCCESS = 'UPDATE_PRODUCT_SUCCESS';
