@@ -5,7 +5,7 @@
       "categoryId": 2,
       "productName": "Chai",
       "quantityPerUnit": "48 - 6 oz jars",
-      "unitPrice": "24",
+      "unitPrice": "244",
       "unitsInStock": 53
     },
     {
@@ -13,7 +13,7 @@
       "categoryId": 1,
       "productName": "Chang",
       "quantityPerUnit": "24 - 12 oz bottles",
-      "unitPrice": "21",
+      "unitPrice": "2122",
       "unitsInStock": 17
     },
     {
@@ -607,6 +607,14 @@
       "quantityPerUnit": "12 boxes",
       "unitPrice": 13,
       "unitsInStock": 32
+    },
+    {
+      "productName": "laptop",
+      "categoryId": 1,
+      "unitPrice": "1000",
+      "quantityPerUnit": "2",
+      "unitsInStock": "2",
+      "id": 78
     }
   ],
   "categories": [

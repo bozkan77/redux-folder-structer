@@ -20,22 +20,23 @@ export function updateProductSuccess(product) {
 }
 
 export function saveProductApi(product) {
-  return fetch(`http://localhost:4000/products/${product.id || ''}`, {
+  console.log(product);
+  return fetch('http://localhost:4000/products/' + (product.id || ''), {
     method: product.id ? 'PUT' : 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(product),
   })
     .then(handleResponse)
-    .catch(hadleError);
+    .catch(handleError);
 }
 
 export function saveProduct(product) {
   return function (dispatch) {
-    return saveProduct(product)
-      .then((saveProduct) => {
+    return saveProductApi(product)
+      .then((savedProduct) => {
         product.id
-          ? dispatch(updateProductSuccess(saveProduct))
-          : dispatch(createProductSuccess(saveProduct));
+          ? dispatch(updateProductSuccess(savedProduct))
+          : dispatch(createProductSuccess(savedProduct));
       })
       .catch((err) => {
         throw err;
@@ -52,7 +53,7 @@ export async function handleResponse(response) {
   throw new Error(err);
 }
 
-export function hadleError(err) {
+export function handleError(err) {
   console.error('Something went wrong');
   throw err;
 }

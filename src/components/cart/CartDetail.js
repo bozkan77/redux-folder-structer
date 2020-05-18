@@ -10,7 +10,7 @@ class CartDetail extends Component {
     this.props.actions.removeFromCart(product);
     alertify.error(`${product.productName} removed from cart`);
   }
-  render() {
+  renderDetail() {
     return (
       <div>
         <Table>
@@ -42,6 +42,17 @@ class CartDetail extends Component {
             ))}
           </tbody>
         </Table>
+      </div>
+    );
+  }
+
+  renderEmpty() {
+    return <h3>Your cart is empty.</h3>;
+  }
+  render() {
+    return (
+      <div>
+        {this.props.cart.length > 0 ? this.renderDetail() : this.renderEmpty()}
       </div>
     );
   }

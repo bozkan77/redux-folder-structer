@@ -9,3 +9,15 @@
   align-items: center;
   margin: 0 7px;
 }
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+a {
+  color: rgba(0, 0, 0, 0.5);
+}
+a:hover {
+  text-decoration: none;
+}
